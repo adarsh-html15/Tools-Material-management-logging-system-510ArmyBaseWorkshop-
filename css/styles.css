@@ -1,0 +1,69 @@
+/* Global Styles */
+:root {
+  --primary-hue: 220; /* blue-ish */
+  --primary-saturation: 70%;
+  --primary-lightness: 55%;
+  --bg-gradient: linear-gradient(135deg, hsl(var(--primary-hue), var(--primary-saturation), 45%), hsl(var(--primary-hue), var(--primary-saturation), 65%));
+  --text-color: #f0f0f0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-color);
+  height: 100%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+.video-wrapper {
+  width: 90%;
+  max-width: 720px;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  background: #000;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hover effect for future buttons */
+button, a {
+  transition: color 0.3s, background 0.3s;
+}
+
+button:hover, a:hover {
+  opacity: 0.85;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-gradient: linear-gradient(135deg, hsl(var(--primary-hue), var(--primary-saturation), 30%), hsl(var(--primary-hue), var(--primary-saturation), 50%));
+  }
+}
