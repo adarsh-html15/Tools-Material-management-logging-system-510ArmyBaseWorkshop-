@@ -7,7 +7,12 @@
 
 ## 📽️ Project Video Demonstration
 
-<video src="assets/video/project_video.mp4" controls width="100%"></video>
+GitHub does not render repository-hosted `<video>` elements inside README files.
+
+[▶ Watch the project video demonstration](./assets/video/project_video.mp4)
+
+If the preview does not play in your browser, use the link above to open the
+video file and download it from GitHub.
 
 ---
 
