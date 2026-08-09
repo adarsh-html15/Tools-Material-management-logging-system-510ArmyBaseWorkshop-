@@ -4,24 +4,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tools Material Management Logging System</title>
+  <meta name="theme-color" content="#0d1628" />
+  <title>Tools & Material Management | 510 Base Workshop</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-  <section class="hero">
-    <h1>Tools Material Management Logging System</h1>
-    <p>A modern web showcase for the 510 Army Base Workshop project.</p>
-    <div class="video-wrapper">
-      <video id="introVideo" controls preload="metadata" poster="assets/images/logo.png">
-        <source src="assets/video/project_video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  </section>
+  <main class="showcase-shell">
+    <nav class="site-nav reveal" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Tools Material Management home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>TMMS<span class="brand-muted">/510</span></span>
+      </a>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Dark</span>
+        </button>
+        <a class="nav-link" href="#demonstration">View demo <span aria-hidden="true">↘</span></a>
+      </div>
+    </nav>
+
+    <section class="hero" id="top" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow reveal"><span class="status-dot"></span> 510 Army Base Workshop · Digital operations</p>
+        <h1 class="reveal" id="page-title">Every movement.<br><em>Fully in control.</em></h1>
+        <p class="intro reveal">A modern logging system for the accountable issue, return, and live tracking of workshop tools and materials.</p>
+        <div class="hero-actions reveal">
+          <a class="primary-button" href="#demonstration">Watch system tour <span aria-hidden="true">↓</span></a>
+          <div class="availability"><span class="availability-value">24/7</span><span>audit-ready<br>records</span></div>
+        </div>
+      </div>
+
+      <aside class="hero-video reveal" id="demonstration" aria-label="Project demonstration video">
+        <div class="frame-bar"><span></span><span></span><span></span><p>TMMS — PROJECT DEMONSTRATION</p></div>
+        <video id="introVideo" controls preload="metadata">
+          <source src="assets/video/project_video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </aside>
+    </section>
+
+    <section class="project-overview" aria-labelledby="overview-title">
+      <div class="overview-intro reveal">
+        <p class="eyebrow"><span class="status-dot"></span> PROJECT AT A GLANCE</p>
+        <h2 id="overview-title">From paper registers to a <em>connected digital ledger.</em></h2>
+        <p>Built for the 510 Army Base Workshop, this system makes every tool and material movement visible, accountable, and easy to retrieve—without exposing sensitive operational data.</p>
+      </div>
+
+      <section class="team-section" aria-labelledby="team-title">
+        <div class="team-heading reveal"><p class="eyebrow">PROJECT TEAM</p><h2 id="team-title">Built during a 28-day industrial internship at 510 Army Base Workshop.</h2></div>
+        <div class="team-grid">
+          <article class="lead-card reveal">
+            <p class="eyebrow">LEAD · CORE ARCHITECTURE</p>
+            <h3>Adarsh Maurya</h3>
+            <p class="lead-role">Lead Backend Developer &amp; Project Coordinator</p>
+            <p>Led the backend architecture, database engineering, frontend-to-API integration, workflow design, and project documentation.</p>
+          </article>
+          <div class="contributors reveal" aria-label="Team contributors">
+            <p class="eyebrow">TEAM CONTRIBUTORS</p>
+            <dl>
+              <div><dt>Aakansha Verma</dt><dd>Database design support &amp; documentation assistance</dd></div>
+              <div><dt>Manvi Sharma</dt><dd>Module integration support &amp; test case verification</dd></div>
+              <div><dt>Prashant Kumar</dt><dd>Frontend UI layout implementation</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <div class="feature-grid">
+        <article class="feature-card reveal"><span>01</span><h3>Digital issue & return</h3><p>Replace error-prone paper entries with structured, time-stamped issue and return records.</p></article>
+        <article class="feature-card reveal"><span>02</span><h3>Live stock monitoring</h3><p>See available quantities, nomenclature, part numbers, locations, and low-stock alerts in one place.</p></article>
+        <article class="feature-card reveal"><span>03</span><h3>Searchable history</h3><p>Filter movement records instantly by material, recipient, workshop section, or date range.</p></article>
+        <article class="feature-card reveal"><span>04</span><h3>Role-based access</h3><p>Separate Admin and Staff permissions so each user sees the controls relevant to their work.</p></article>
+        <article class="feature-card reveal"><span>05</span><h3>Audit & reporting</h3><p>Generate a dependable movement trail and summaries ready for operational review.</p></article>
+      </div>
+
+      <div class="workflow-section">
+        <div class="workflow-heading reveal"><p class="eyebrow">HOW THE SYSTEM WORKS</p><h2>One record follows the material from request to audit.</h2></div>
+        <ol class="workflow-list">
+          <li class="reveal"><span>01</span><div><h3>Login & authenticate</h3><p>Role-based access validates Admin and Staff sessions.</p></div></li>
+          <li class="reveal"><span>02</span><div><h3>Manage inventory</h3><p>Store tools, material details, quantities, and locations.</p></div></li>
+          <li class="reveal"><span>03</span><div><h3>Issue or return</h3><p>Record the recipient, section, quantity, and time of every handover.</p></div></li>
+          <li class="reveal"><span>04</span><div><h3>Review & report</h3><p>Retrieve an immutable transaction history for audit and reporting.</p></div></li>
+        </ol>
+      </div>
+
+      <div class="system-summary">
+        <article class="summary-card reveal"><p class="eyebrow">CORE DATA</p><h3>Users · Items · Transactions</h3><p>Three connected records provide control over people, stock, and every movement.</p></article>
+        <article class="summary-card reveal"><p class="eyebrow">TECHNOLOGY</p><h3>Node.js · Express · MySQL / SQLite</h3><p>A responsive HTML, CSS, and JavaScript interface connects to a structured backend and database.</p></article>
+        <aside class="security-note reveal"><span aria-hidden="true">✓</span><div><h3>Designed with data boundaries in mind.</h3><p>This showcase uses representative data only. The production system is intended for secure local intranet/LAN deployment.</p></div></aside>
+      </div>
+    </section>
+  </main>
+  <footer><span>TOOLS & MATERIAL MANAGEMENT SYSTEM</span><span>510 BASE WORKSHOP</span></footer>
   <script src="js/script.js"></script>
 </body>
 
