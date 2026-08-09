@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
   themeToggle.addEventListener('click', () => {
     const isDark = !document.body.classList.contains('dark-theme');
     setTheme(isDark);
-    localStorage.setItem('tmms-theme', isDark ? 'dark' : 'light');
   });
 
   const reveal = (entries, observer) => entries.forEach((entry) => {
